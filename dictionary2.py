@@ -8,11 +8,6 @@ students = [
      {'first_name' : 'Mark', 'last_name' : 'Guillen'},
      {'first_name' : 'KB', 'last_name' : 'Tonel'}
 ]
-# output :
-# Michael Jordan
-# John Rosales
-# Mark Guillen
-# KB Tonel
 
 def students_list(students):
     for student in students:
@@ -53,7 +48,7 @@ def names(users):
             name = []
             for val in info.itervalues():
                 name += [val]
-            name = " ".join(name)
+            name = " ".join(name).upper()
             length = len(name) - 1
             num = i + 1
             print num, "-",name, "-", length
