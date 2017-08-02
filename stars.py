@@ -5,7 +5,7 @@
 x = [4, "Tom", 1, "Michael", 5, 7, "Jimmy Smith"]
 def draw_stars(x):
     for i in x:
-        if type(i) is str:
+         if type(i) is str:
             print i[0].lower() * len(i)
         else:
             print "*" * i
